@@ -6,7 +6,7 @@ A simple app to help you keep track of your friends and not lose touch with them
 
 ## 🔗 Live Link
 
-👉 [Click here to visit the site](https://keen-keeper-aof9ka811-imtamim1111-2588s-projects.vercel.app/)
+👉 [Click here to visit the site](https://keen-keeper-oi5lqyjfc-imtamim1111-2588s-projects.vercel.app/)
 
 ---
 

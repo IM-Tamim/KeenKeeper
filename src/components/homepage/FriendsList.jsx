@@ -21,7 +21,7 @@ const FriendsGrid = async () => {
 
 const LoadingSpinner = () => (
   <div className="flex flex-col justify-center items-center py-20 gap-4">
-    <span className="loading loading-spinner text-accent"></span>
+    <div className="w-12 h-12 border-4 border-gray-200 border-t-[#1f4134] rounded-full animate-spin"></div>
     <p className="text-gray-400 text-sm">Loading friends...</p>
   </div>
 );
