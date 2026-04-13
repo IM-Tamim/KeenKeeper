@@ -44,7 +44,7 @@ const Footer = () => {
 
         <div className="w-8/12 mx-auto mt-4 pt-6 text-center text-sm flex items-center justify-between gap-4">
           <p className="">2026 KeenKeeper. All rights reserved.</p>
-          <div className="flex gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             <ul>
               <li>Privacy Policy</li>
             </ul>

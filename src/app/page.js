@@ -1,4 +1,5 @@
 import Banner from "@/components/homepage/Banner";
+import FriendsList from "@/components/homepage/FriendsList";
 import SummaryCards from "@/components/homepage/SummaryCards";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Banner />
       <SummaryCards />
+      <FriendsList />
     </div>
   );
 }

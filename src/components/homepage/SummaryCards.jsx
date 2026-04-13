@@ -9,8 +9,8 @@ const SummaryCards = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-6">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div className="w-11/12 mx-auto px-6 border-b-2 border-gray-200 py-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {cards.map((card, index) => (
           <div 
             key={index} 
