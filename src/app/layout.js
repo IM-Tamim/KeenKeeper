@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "KinKeeper — Keep Your Friendships Alive",
+  title: "KeenKeeper",
   description: "Track and nurture your friendships with KinKeeper",
 };
 
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
-          <ToastContainer/>
+          <ToastContainer position="top-center" />
         </Providers>
       </body>
     </html>

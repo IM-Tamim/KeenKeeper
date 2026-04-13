@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KeenKeeper 👥
 
-## Getting Started
+A simple app to help you keep track of your friends and not lose touch with them. basically i made this because i always forget to text people and then months pass by lol.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔗 Live Link
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👉 [Click here to visit the site](https://keen-keeper-aof9ka811-imtamim1111-2588s-projects.vercel.app/)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📝 About the Project
 
-## Learn More
+KeenKeeper is a friendship tracker app. you can see all your friends in one place, check when you last talked to them, and log whenever you call or text or video call someone. it also shows you who you havent contacted in a while so you can reach out to them.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##  Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js**
+- **Tailwind CSS**
+- **DaisyUI**
+- **Recharts**
+- **React Toastify**
+- **React Icons**
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##  Key Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**1. Friend Tracking**
+you can see all your friends as cards on the home page. each card shows their photo, how many days since you last contacted them, and their status (on-track, almost due, or overdue). clicking a card takes you to their detail page.
+
+**2. Quick Check-In Logging**
+on each friends detail page there are 3 buttons — Call, Text, and Video. when you click any of them it saves that interaction to the timeline with the current date and shows a toast notification. pretty useful for keeping a record.
+
+**3. Timeline + Stats**
+the timeline page shows all your interactions in order. you can also filter by call, text, or video. the stats page has a pie chart showing the breakdown of how you usually contact people.
+
+

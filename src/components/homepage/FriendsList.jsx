@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import FriendCard from "../ui/FriendCard";
 
 const getFriends = async () => {
-  const res = await fetch("http://localhost:3000/friends.json");
+  const res = await fetch("https://keen-keeper-alpha.vercel.app/friends.json");
   const data = await res.json();
   return data;
 };

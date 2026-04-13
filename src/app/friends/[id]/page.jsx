@@ -2,7 +2,7 @@ import FriendDetailClient from "@/components/ui/FriendDetailClient";
 import { notFound } from "next/navigation";
 
 const getFriends = async () => {
-  const res = await fetch("http://localhost:3000/friends.json");
+  const res = await fetch("https://keen-keeper-alpha.vercel.app/friends.json");
   const data = await res.json();
   return data;
 };

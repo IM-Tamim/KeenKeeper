@@ -1,16 +1,7 @@
 "use client";
-import React, { useContext } from "react";
+import { Legend, Pie, PieChart, Tooltip } from "recharts";
 import { TimelineContext } from "@/context/timelineContext";
-import {
-  PieChart,
-  Pie,
-  Cell,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
-
-const COLORS = ["#10b981", "#3b82f6", "#8b5cf6"];
+import { useContext } from "react";
 
 const StatsPage = () => {
   const { timeline } = useContext(TimelineContext);
@@ -20,57 +11,45 @@ const StatsPage = () => {
   const videoCount = timeline.filter((e) => e.type === "Video").length;
 
   const data = [
-    { name: "Text", value: textCount },
-    { name: "Call", value: callCount },
-    { name: "Video", value: videoCount },
+    { name: "Call", value: callCount, fill: "#10b981" },
+    { name: "Text", value: textCount, fill: "#3b82f6" },
+    { name: "Video", value: videoCount, fill: "#8b5cf6" },
   ].filter((d) => d.value > 0);
 
   return (
-    <div className="w-11/12 mx-auto my-10 px-4">
-      <h2 className="text-4xl font-bold mb-2">Friendship Analytics</h2>
-      <p className="text-gray-500 mb-10">
-        A visual breakdown of how you stay connected with your friends.
-      </p>
+    <div className="my-10 shadow p-10 rounded-md border border-slate-300 w-11/12 mx-auto">
+      <h2 className="font-semibold text-3xl mb-16 text-center">
+        Friendship Analytics
+      </h2>
 
-      <div className="bg-white border border-gray-100 rounded-2xl shadow-sm p-8">
-        <h3 className="text-xl font-semibold mb-6">By Interaction Type</h3>
-        {data.length === 0 ? (
-          <div className="text-center py-20 text-gray-400">
-            <p className="text-lg">No interaction data yet.</p>
-            <p className="mt-1">
-              Log check-ins from a friend page to see analytics here.
-            </p>
-          </div>
-        ) : (
-          <ResponsiveContainer width="100%" height={350}>
-            <PieChart>
-              <Pie
-                data={data}
-                cx="50%"
-                cy="50%"
-                innerRadius={80}
-                outerRadius={130}
-                dataKey="value"
-              >
-                {data.map((entry, index) => {
-                  let colorIndex = 0;
-                  if (entry.name === "Text") colorIndex = 0;
-                  else if (entry.name === "Call") colorIndex = 1;
-                  else if (entry.name === "Video") colorIndex = 2;
-                  return (
-                    <Cell
-                      key={`cell-${index}`}
-                      fill={COLORS[colorIndex % COLORS.length]}
-                    />
-                  );
-                })}
-              </Pie>
-              <Tooltip />
-              <Legend />
-            </PieChart>
-          </ResponsiveContainer>
-        )}
-      </div>
+      {data.length === 0 ? (
+        <div className="text-center py-20 text-gray-400">
+          <p className="text-lg">No interaction data yet.</p>
+          <p className="mt-1">
+            Log check-ins from a friend page to see analytics here.
+          </p>
+        </div>
+      ) : (
+        <PieChart
+          style={{
+            width: "50%",
+            maxWidth: "300px",
+            maxHeight: "70vh",
+            margin: "auto",
+            aspectRatio: 1,
+          }}
+        >
+          <Pie
+            data={data}
+            innerRadius="80%"
+            outerRadius="100%"
+            dataKey="value"
+            isAnimationActive={true}
+          />
+          <Legend className="flex gap-5 items-center justify-center" />
+          <Tooltip />
+        </PieChart>
+      )}
     </div>
   );
 };
