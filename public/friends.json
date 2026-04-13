@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Mithila Chowdhury",
-    "picture": "https://i.pravatar.cc/300?img=56",
+    "picture": "https://i.pravatar.cc/300?img=22",
     "email": "mithila.c@gmail.com",
     "days_since_contact": 45,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Farhan Kabir",
-    "picture": "https://i.pravatar.cc/300?img=22",
+    "picture": "https://i.pravatar.cc/300?img=56",
     "email": "farhan.kabir@gmail.com",
     "days_since_contact": 2,
     "status": "on-track",

@@ -19,19 +19,20 @@ const FriendsGrid = async () => {
   );
 };
 
-const LoadingSkeleton = () => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-    {[...Array(8)].map((_, i) => (
-      <div key={i} className="rounded-2xl bg-gray-100 animate-pulse h-56"></div>
-    ))}
+const LoadingSpinner = () => (
+  <div className="flex flex-col justify-center items-center py-20 gap-4">
+    <span className="loading loading-spinner text-accent"></span>
+    <p className="text-gray-400 text-sm">Loading friends...</p>
   </div>
 );
 
 const FriendsList = () => {
   return (
     <div className="w-11/12 mx-auto px-4 my-10">
-    <h2 className="font-bold text-4xl text-gray-800 text-left mb-10">Your Friends</h2>
-      <Suspense fallback={<LoadingSkeleton />}>
+      <h2 className="font-bold text-4xl text-gray-800 text-left mb-10">
+        Your Friends
+      </h2>
+      <Suspense fallback={<LoadingSpinner />}>
         <FriendsGrid />
       </Suspense>
     </div>

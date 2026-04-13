@@ -11,6 +11,7 @@ import {
   FaTrash,
   FaPen,
 } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
 
 const statusConfig = {
@@ -80,10 +81,16 @@ const FriendDetailClient = ({ friend }) => {
               ))}
             </div>
 
-            <p className="text-gray-500 text-sm text-center mb-5">
+            <p className="text-gray-500 text-sm text-center mb-4">
               {friend.bio}
             </p>
 
+            <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-6">
+              <FaEnvelope className="text-gray-400" />
+              <span>{friend.email}</span>
+            </div>
+
+            {/* Action Buttons */}
             <div className="flex flex-col gap-2">
               <button className="flex items-center justify-center gap-2 rounded-lg py-2 text-sm hover:bg-gray-50 shadow-sm">
                 <FaClock /> Snooze 2 Weeks
@@ -106,9 +113,7 @@ const FriendDetailClient = ({ friend }) => {
               <p className="text-2xl font-bold text-gray-800">
                 {friend.days_since_contact}
               </p>
-              <p className="text-xs text-gray-500 mt-1">
-                Days Since Contact
-              </p>
+              <p className="text-xs text-gray-500 mt-1">Days Since Contact</p>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-5 text-center shadow-sm">
@@ -149,7 +154,7 @@ const FriendDetailClient = ({ friend }) => {
                   type="number"
                   value={tempGoal}
                   onChange={(e) => setTempGoal(Number(e.target.value))}
-                  className="rounded px-2 py-1 w-20 text-sm shadow-sm"
+                  className="rounded px-2 py-1 w-20 text-sm shadow-sm border"
                   min={1}
                 />
                 <button
@@ -157,6 +162,12 @@ const FriendDetailClient = ({ friend }) => {
                   className="text-xs bg-gray-800 text-white px-3 py-1 rounded shadow-sm"
                 >
                   Save
+                </button>
+                <button
+                  onClick={() => { setEditingGoal(false); setTempGoal(goal); }}
+                  className="text-xs px-3 py-1 rounded shadow-sm"
+                >
+                  Cancel
                 </button>
               </div>
             ) : (
@@ -174,25 +185,25 @@ const FriendDetailClient = ({ friend }) => {
             <div className="grid grid-cols-3 gap-3">
               <button
                 onClick={() => handleCheckIn("Call")}
-                className="rounded-xl py-5 flex flex-col items-center gap-2 hover:bg-gray-50 shadow-sm"
+                className="rounded-xl py-5 flex flex-col items-center gap-2 hover:bg-gray-50 shadow-sm transition-colors"
               >
-                <FaPhone />
+                <FaPhone className="text-emerald-500 text-xl" />
                 <span className="text-sm">Call</span>
               </button>
 
               <button
                 onClick={() => handleCheckIn("Text")}
-                className="rounded-xl py-5 flex flex-col items-center gap-2 hover:bg-gray-50 shadow-sm"
+                className="rounded-xl py-5 flex flex-col items-center gap-2 hover:bg-gray-50 shadow-sm transition-colors"
               >
-                <FaCommentSms />
+                <FaCommentSms className="text-blue-500 text-xl" />
                 <span className="text-sm">Text</span>
               </button>
 
               <button
                 onClick={() => handleCheckIn("Video")}
-                className="rounded-xl py-5 flex flex-col items-center gap-2 hover:bg-gray-50 shadow-sm"
+                className="rounded-xl py-5 flex flex-col items-center gap-2 hover:bg-gray-50 shadow-sm transition-colors"
               >
-                <FaVideo />
+                <FaVideo className="text-purple-500 text-xl" />
                 <span className="text-sm">Video</span>
               </button>
             </div>

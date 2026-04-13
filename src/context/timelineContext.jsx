@@ -17,7 +17,9 @@ const TimelineProvider = ({ children }) => {
   };
 
   return (
-    <TimelineContext.Provider value={data}>{children}</TimelineContext.Provider>
+    <TimelineContext.Provider value={data}>
+      {children}
+    </TimelineContext.Provider>
   );
 };
 
