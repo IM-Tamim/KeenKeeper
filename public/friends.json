@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Ayesha Rahman",
+    "picture": "https://api.dicebear.com/9.x/lorelei/svg?seed=Ayesha",
+    "email": "ayesha.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in first year of university. We used to study together every night before exams. She moved to Dhaka after graduation but we still try to keep in touch.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "name": "Tanvir Hossain",
+    "picture": "https://api.dicebear.com/9.x/lorelei/svg?seed=Tanvir",
+    "email": "tanvir.h@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "My senior colleague who helped me land my first job. We grab coffee every couple of weeks and talk about tech and life goals.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Priya Chakraborty",
+    "picture": "https://api.dicebear.com/9.x/lorelei/svg?seed=Priya",
+    "email": "priya.chakra@yahoo.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["school", "childhood"],
+    "bio": "We grew up in the same neighborhood and went to the same school from class 1 to 10. Best memories of my childhood are with her.",
+    "goal": 12,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 4,
+    "name": "Rakibul Islam",
+    "picture": "https://api.dicebear.com/9.x/lorelei/svg?seed=Rakibul",
+    "email": "rakib.islam@proton.me",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["college", "roommate"],
+    "bio": "We were roommates for 3 years in university. He knows all my embarrassing stories. Currently working as a software engineer in Chittagong.",
+    "goal": 21,
+    "next_due_date": "2026-03-28"
+  },
+  {
+    "id": 5,
+    "name": "Nadia Sultana",
+    "picture": "https://api.dicebear.com/9.x/lorelei/svg?seed=Nadia",
+    "email": "nadia.sultana@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["work", "close friend"],
+    "bio": "We work in the same team. She is extremely talented and always brings a positive vibe to every meeting. We often have lunch together.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 6,
+    "name": "Sabbir Ahmed",
+    "picture": "https://api.dicebear.com/9.x/lorelei/svg?seed=Sabbir",
+    "email": "sabbir.ahmed@hotmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["family friend", "neighbor"],
+    "bio": "Our families have been friends for over 20 years. He is like a brother to me. We play football together on weekends when schedules allow.",
+    "goal": 10,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 7,
+    "name": "Mithila Chowdhury",
+    "picture": "https://api.dicebear.com/9.x/lorelei/svg?seed=Mithila",
+    "email": "mithila.c@gmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["college", "project partner"],
+    "bio": "We worked on our final year project together and became really close. She is now doing a Masters in Canada. Time zones make it hard to connect.",
+    "goal": 30,
+    "next_due_date": "2026-03-15"
+  },
+  {
+    "id": 8,
+    "name": "Farhan Kabir",
+    "picture": "https://api.dicebear.com/9.x/lorelei/svg?seed=Farhan",
+    "email": "farhan.kabir@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["hobby", "gym buddy"],
+    "bio": "We met at the gym two years ago and instantly clicked over our shared love for fitness and cooking. We exchange healthy recipes and workout plans regularly.",
+    "goal": 7,
+    "next_due_date": "2026-04-21"
+  }
+]

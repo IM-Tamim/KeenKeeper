@@ -27,7 +27,6 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Hamburger (mobile only) */}
           <button
             className="md:hidden text-2xl"
             onClick={() => setOpen(!open)}
