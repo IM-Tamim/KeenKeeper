@@ -9,7 +9,7 @@ const NotFoundPage = () => {
       <p className="text-gray-500">
         Oops! Looks like this friendship link is broken.
       </p>
-      <Link href="/" className="btn bg-[#244D3F] text-white mt-2">
+      <Link href="./" className="btn bg-[#244D3F] text-white mt-2">
         Go Back
       </Link>
     </div>
